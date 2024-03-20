@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LayoutComponent } from './core/layout/layout.component';
 
 const routes: Routes = [
-/*   {
+  {
     path: 'inicio',
-    component: PageInicioComponent
-  } */
+    component: LayoutComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'inicio'
+  }
 ];
 
 @NgModule({
