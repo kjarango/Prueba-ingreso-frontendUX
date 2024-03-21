@@ -1,3 +1,6 @@
+@use '../../../../styles.scss' as v;
+@import '../../../../media-queries';
+
 .navbar {
     width: 100%;
     height: 50px;
@@ -25,17 +28,75 @@
         }
     }
 
-    .nav-items {
-        padding: 29px;
+    .close {
+        display: none;
+    }
 
-        li {
+    .navbar-collapse {
+        display: none;
+    }
+}
+
+.sidebar {
+    display: none;
+    text-align: left;
+
+    &.is-open {
+        display: block;
+        position: absolute;
+        top: 65px;
+        background-color: #ffffff;
+        padding: 56px 14px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .menu {
+        .menu-item {
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23.44px;
+
+            button {
+                border: none;
+                background-color: #ffffff;
+                font-size: 20px;
+            }
+        }
+
+        hr {
+            border: 1px solid #B2B2C1;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .submenu {
+        display: none;
+
+        &.is-open {
+            display: block;
+            position: absolute;
+            top: 35px;
+            background-color: #ffffff;
+            padding:14px;
+            width: 100%;
+            height: 100vh;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 23.44px;
+        }
+
+        .submenu-item {
+            padding-left: 42px;
             font-size: 16px;
             font-weight: 400;
             line-height: 18.75px;
-            text-align: left;
-            float: left;
-            margin-right: 29px;
-        }
 
+        }
     }
 }

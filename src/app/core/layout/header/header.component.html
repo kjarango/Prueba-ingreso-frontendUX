@@ -1,13 +1,16 @@
 <nav class="navbar">
-    <button class="btn-toggle" type="button" (click)="toggleMenu()">
+    <button class="btn-toggle burger" type="button" (click)="toggleMenu()">
         <img src="../../../../assets/icons/Vector (1).svg" alt="">
+    </button>
+    <button class="btn-toggle close" type="button" (click)="toggleMenu()">
+        <img src="../../../../assets/icons/close_FILL0_wght400_GRAD0_opsz48 2.svg" alt="">
     </button>
 
     <a class="navbar-brand" href="#">
         <img src="../../../../assets/img/logo1.svg" alt="">
     </a>
 
-    <!-- <div class="navbar-collapse" [class.is-open]="isMenuOpen">
+    <div class="navbar-collapse">
         <ul class="nav-items">
             <li class="nav-item">Check-in</li>
             <li class="nav-item">Manage my booking</li>
@@ -22,10 +25,32 @@
 
             </li>
         </ul>
-    </div> -->
+    </div>
     <button class="btn-lang" type="button">
         <img src="../../../../assets/icons/Vector.svg" alt="">
     </button>
 
 
 </nav>
+
+<div class="sidebar" [class.is-open]="isMenuOpen">
+    <ul class="menu">
+        <li class="menu-item">Check-in</li>
+        <hr>
+        <li class="menu-item">Manage my booking</li>
+        <hr>
+        <li class="menu-item">
+            <button (click)="toggleSubMenu()">
+                Information
+            </button>
+        </li>
+        <hr>
+    </ul>
+    <ul class="submenu" [class.is-open]="isSubMenuOpen">
+        <h2>Information</h2>
+        <li class="submenu-item">Help center</li>
+        <li class="submenu-item">Flight state</li>
+        <li class="submenu-item">Airplanes</li>
+        <li class="submenu-item">Routes</li>
+    </ul>
+</div>
