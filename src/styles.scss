@@ -1,5 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
 $font: "Roboto", sans-serif;
+$primary:#181823;
+$secondary:#537FE7;
+$tertiary:#C20114;
+$color5:#9292A0;
+$color5-claro:#C0EEF2;
+$color7:#E9F8F9;
+$color-gray8:#E7E6F6;
+$color-gray9:#F1F0FF;
 
 @font-face {
     font-family: $font;
@@ -8,4 +17,18 @@ $font: "Roboto", sans-serif;
 
 *{
     font-family: $font;
+}
+body{
+  margin: 0px;
+
+}
+
+ul {
+  list-style: none;
+  padding:10px 20px;
+  margin: 0px;
+}
+
+a{
+  text-decoration: none;
 }
