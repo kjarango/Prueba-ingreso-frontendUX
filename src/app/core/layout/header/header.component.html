@@ -15,8 +15,8 @@
             <li class="nav-item">Check-in</li>
             <li class="nav-item">Manage my booking</li>
             <li class="nav-item dropdown">
-                <a href="" class="nav-link dropdown-toggle">Information</a>
-                 <div class="dropdown-menu">
+                <button  class="nav-link dropdown-toggle" (click)="Dropdown()">Information</button>
+                 <div class="dropdown-menu" [class.is-open]="isDropdownOpen">
                     <a href="" class="dropdown-item">Help center</a>
                     <a href="" class="dropdown-item">Flight state</a>
                     <a href="" class="dropdown-item">Airplanes</a>
@@ -28,6 +28,7 @@
     </div>
     <button class="btn-lang" type="button">
         <img src="../../../../assets/icons/Vector.svg" alt="">
+        <span>English</span>
     </button>
 
 

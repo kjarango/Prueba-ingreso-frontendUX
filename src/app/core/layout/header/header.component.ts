@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
   isMenuOpen = false;
   isSubMenuOpen = false;
+  isDropdownOpen = false;
   
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
@@ -17,6 +18,10 @@ export class HeaderComponent implements OnInit {
   }
   toggleSubMenu(): void {
     this.isSubMenuOpen = !this.isSubMenuOpen;
+  }
+  Dropdown(): void {
+    this.isDropdownOpen = !this.isDropdownOpen;
+    console.log(this.isDropdownOpen)
   }
 
   ngOnInit(): void {
