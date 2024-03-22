@@ -235,6 +235,28 @@
 
         }
     }
+
+    /* Media query para tablet */
+    @media screen and (min-width: v.$breackpoint-mintablet) and (max-width: v.$breackpoint-maxtablet) {
+
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            .card-offer {
+                flex-grow: 1;
+            }
+
+            .items{
+                img {
+                    margin-left: 48%;
+                }
+                .txt-offer {
+                    padding: 25px;
+                    margin-left: 70%;
+                }
+            }
+        }
+    }   
 }
 /* Tercera seccion del body */
 .destination {
@@ -349,4 +371,10 @@
         }
 
     }
+     /* Media query para tablet */
+     @media screen and (min-width: v.$breackpoint-mintablet) and (max-width: v.$breackpoint-maxtablet) {
+        .card-destination{
+            width: 100%;
+        }
+     }
 }
