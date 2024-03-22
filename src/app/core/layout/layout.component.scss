@@ -5,7 +5,11 @@
     padding: 100px 13px;
     background-image: url('../../../assets/img/john-mcarthur-8KLLgqHMAv4-unsplash\ 2.png');
     background-repeat: no-repeat;
-    background-size: 200% 200%;
+    background-size: cover;
+    object-fit: none;
+
+    /* clip: rect(<top>, <right>, <bottom>, <left>); */
+    /* clip: rect(10px, 50px, 150px, 150px); */
 
     .texto {
         h3 {
@@ -34,9 +38,11 @@
     }
 
     @media (min-width: 1024px) {
+
         padding-left: 145px;
         background-repeat: no-repeat;
-        background-size: auto ;
+        background-size: cover ;
+        object-fit: none;
 
         .texto {
             h3 {
@@ -70,45 +76,79 @@
         left: 14px;
         margin-bottom: 16px;
         gap: 0px;
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 16px;
         opacity: 0px;
         text-align: left;
 
-        .txt-offer {
-            text-align: right;
-            padding: 30px;
-            margin-top: 100px;
+        .items{
+            position: relative;
 
-            /* color: #FFFFFF */
-            .h3 {
-                font-size: 28px;
-                font-weight: 700;
-                line-height: 32.81px;
+            img{
+                position: absolute;
+                margin-top:10px; 
+                border-radius: 0 0 16px 16px;
+                z-index: 1;
             }
-
-            span {
-                font-size: 22px;
-                font-weight: 700;
-                line-height: 25.78px;
-                text-align: left;
-
-                span {
-                    font-size: 16px;
+            .txt-offer {
+                position: absolute;
+                text-align: right;
+                padding: 20px 30px;
+                margin-top: 90px;
+                color: #FFFFFF;
+                margin-left: 45%;
+                z-index: 3;
+    
+                h3 {
+                    font-size: 28px;
                     font-weight: 700;
-                    line-height: 18.75px;
-
+                    line-height: 32.81px;
+                }
+    
+                span {
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 25.78px;
+                    text-align: left;
+    
+                    span {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 18.75px;
+    
+                    }
                 }
             }
+    
         }
 
+        
         .offer-chicago1 {
-            background-image: url('../../../assets/img/chicago2.png');
+            background-image: url('../../../assets/img/chicago2.png'),url('../../../assets/img/Intersect.svg');
             background-repeat: no-repeat;
             background-size: auto;
         }
 
+    }
+    .offer-porto {
+        background-image: url("../../../assets/img/porto1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover ;
+        object-fit: none;
 
+    }
+    .offer-chicago1 {
+        background-image: url("../../../assets/img/chicago2.png");
+        background-repeat: no-repeat;
+        background-size: cover ;
+        object-fit: none;
+
+    }
+    .offer-chicago2 {
+        background-image: url("../../../assets/img/mire1.png");
+        background-repeat: no-repeat;
+        background-size: cover ;
+        object-fit: none;
 
     }
 
@@ -124,13 +164,64 @@
         .offer-chicago2 {
             width: 296px;
             height: 258px;
+            
+            .items{
+                img{
+                    margin-top:70px; 
+                    width: 288px;
+                }
+                .txt-offer {
+                    padding: 25px;
+                    margin-left: 30%;
+                }
+            }
         }
 
         .offer-porto {
             width: 614px;
             height: 258px;
+            background-image: url("../../../assets/img/porto1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover ;
+            object-fit: none;
 
+            .items{
+                img{
+                    margin-top:10px; 
+                    margin-left: 35%;
+                    width: auto;
+                    height: auto;
+                }
+                .txt-offer {
+                    padding: 25px;
+                    margin-left: 66%;
+                }
+            }
 
+        }
+        .offer-chicago1 {
+            background-image: url("../../../assets/img/chicago2.png");
+            background-repeat: no-repeat;
+            background-size: cover ;
+            object-fit: none;
+
+        }
+        .offer-chicago2 {
+            background-image: url("../../../assets/img/mire1.png");
+            background-repeat: no-repeat;
+            background-size: cover ;
+            object-fit: none;
+        }
+        .items{
+
+            img{
+                position: absolute;
+                margin-top:10px; 
+                width: auto;
+                border-radius: 0 0 16px 16px;
+                z-index: 1;
+            }
+            
         }
     }
 }
@@ -201,6 +292,47 @@
             top: 1297px;
             left: 1.42px;
             background: linear-gradient(80.01deg, #1D1823 32.05%, #537FE7 99.99%);
+            display: flex;
+            flex-direction: row;
+
+            .img-card{
+                width: 60%;
+                background-image: url("../../../assets/img/alexandr-podvalny-G5tfP-gBM84-unsplash 1.jpg") ;
+                background-size: cover;
+                background-position: center;
+                transition: transform .2s;
+                border-radius: 0 45% 45% 0 ;
+                object-fit: none;
+                background-position-x: center;
+            }
+            .card-body{
+                .titulo {
+                    font-size: 34px;
+                    font-weight: 700;
+                    text-align: left;
+                    color: #FFFFFF;
+    
+                }
+    
+                .subtitulo {
+                    font-family: Roboto;
+                    font-size: 34px;
+                    font-weight: 400;
+                    text-align: left;
+                    color: v.$color5;
+    
+                }
+    
+                .txt-body {
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 21.09px;
+                    text-align: left;
+                    color: #FFFFFF;
+                }
+
+            }
 
         
         }
