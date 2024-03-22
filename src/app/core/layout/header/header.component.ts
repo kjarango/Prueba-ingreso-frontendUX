@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
   toggleSubMenu(): void {
     this.isSubMenuOpen = !this.isSubMenuOpen;
   }
-  Dropdown(): void {
+  toggleDropdown(): void {
     this.isDropdownOpen = !this.isDropdownOpen;
     console.log(this.isDropdownOpen)
   }

@@ -11,20 +11,19 @@
     </a>
 
     <div class="navbar-collapse">
-        <ul class="nav-items">
+        <ul class="nav-items"> 
             <li class="nav-item">Check-in</li>
             <li class="nav-item">Manage my booking</li>
             <li class="nav-item dropdown">
-                <button  class="nav-link dropdown-toggle" (click)="Dropdown()">Information</button>
-                 <div class="dropdown-menu" [class.is-open]="isDropdownOpen">
-                    <a href="" class="dropdown-item">Help center</a>
-                    <a href="" class="dropdown-item">Flight state</a>
-                    <a href="" class="dropdown-item">Airplanes</a>
-                    <a href="" class="dropdown-item">Routes</a>
-                </div>
-
+                <button  class="nav-link dropdown-toggle" (click)="toggleDropdown()">Information</button>
             </li>
         </ul>
+    </div>
+    <div class="dropdown-menu" [class.is-open]="isDropdownOpen">
+        <p class="dropdown-item">Help center</p>
+        <p  class="dropdown-item">Flight state</p>
+        <p  class="dropdown-item">Airplanes</p>
+        <p  class="dropdown-item">Routes</p>
     </div>
     <button class="btn-lang" type="button">
         <img src="../../../../assets/icons/Vector.svg" alt="">

@@ -29,11 +29,16 @@
         display: none;
     }
 
-    .navbar-collapse {
+    .nav-item {
+        display: none;
+    }
+
+    .dropdown-menu {
         display: none;
     }
 
     @media (min-width: 1024px) {
+
         .btn-toggle {
             display: none;
         }
@@ -50,9 +55,9 @@
             }
         }
 
-        .navbar-collapse {
-            display: inline-flex;
-            padding-right: 0.5em;
+        .nav-item {
+            display: inline;
+            padding: 0.5em 0;
             float: left;
             font-size: 16px;
             font-weight: 400;
@@ -64,35 +69,30 @@
                 button {
                     border: none;
                     background-color: #ffffff;
-                    font-size: 20px;
+                    font-size: 16px;
+                    padding: 0px;
+                    margin: 0px;
                 }
-
-                .dropdown-menu {
-                    display: none;
-                }
-
-                &.is-open {
-                    .dropdown-menu {
-                        display: block;
-                        position: absolute;
-                        border: 1px solid red;
-                        box-shadow: 4px 4px 16px 0px #00000040;
-                        width: 250px;
-                        height: 189px;
-
-                    }
-
-                    .dropdown-item {
-                        top: 46px;
-                        left: 30.12px;
-                        gap: 13px;
-                    }
-
-                }
-
             }
+        }
 
 
+        &.is-open {
+            .dropdown-menu {
+                display: block;
+                text-decoration: none;
+                position: absolute;
+                color: v.$primary;
+                width: 200px;
+                height: 189px;
+                left: 55%;
+                background-color: #ffffff;
+                padding:16px 30px ;
+                margin-top: 50px;
+                border-radius: 15px;
+                box-shadow: 4px 4px 16px 0px #00000040;
+                /* clip-path: polygon(0 100%, 100% 100%, 100% 8%, 55% 8%, 50% 1%, 46% 8%, 0 8%); */
+            }
 
         }
     }
