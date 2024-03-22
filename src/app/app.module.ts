@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './core/layout/footer/footer.component';
 import { HeaderComponent } from './core/layout/header/header.component';
 import { LayoutComponent } from './core/layout/layout.component';
-
+/* 
+* importacion y declaracion de los componentes que se crearon
+*/
 
 @NgModule({
   declarations: [

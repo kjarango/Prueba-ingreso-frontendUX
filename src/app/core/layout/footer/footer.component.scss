@@ -1,5 +1,6 @@
+/* importacion de la variable globales */
 @use '../../../../styles.scss' as v;
-@import '../../../../media-queries';
+
 
 .footer {
     background-color: v.$color-gray8;
@@ -57,7 +58,8 @@
         font-weight: 400;
     }
 
-    @media (min-width: 1024px) {
+    /* Media query para Desktop */
+    @media (min-width: v.$breackpoint-desktop)  {
         .footer-container {
             display: flex;
             flex-direction: row;
