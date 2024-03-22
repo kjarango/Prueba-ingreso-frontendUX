@@ -5,11 +5,8 @@
     padding: 100px 13px;
     background-image: url('../../../assets/img/john-mcarthur-8KLLgqHMAv4-unsplash\ 2.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 250%;
     object-fit: none;
-
-    /* clip: rect(<top>, <right>, <bottom>, <left>); */
-    /* clip: rect(10px, 50px, 150px, 150px); */
 
     .texto {
         h3 {
@@ -37,11 +34,11 @@
 
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: v.$breackpoint-destop)  {
 
         padding-left: 145px;
         background-repeat: no-repeat;
-        background-size: cover ;
+        background-size: cover;
         object-fit: none;
 
         .texto {
@@ -81,15 +78,17 @@
         opacity: 0px;
         text-align: left;
 
-        .items{
+
+        .items {
             position: relative;
 
-            img{
+            img {
                 position: absolute;
-                margin-top:10px; 
+                margin-top: 10px;
                 border-radius: 0 0 16px 16px;
                 z-index: 1;
             }
+
             .txt-offer {
                 position: absolute;
                 text-align: right;
@@ -98,62 +97,66 @@
                 color: #FFFFFF;
                 margin-left: 45%;
                 z-index: 3;
-    
+
                 h3 {
                     font-size: 28px;
                     font-weight: 700;
                     line-height: 32.81px;
                 }
-    
+
                 span {
                     font-size: 22px;
                     font-weight: 700;
                     line-height: 25.78px;
                     text-align: left;
-    
+
                     span {
                         font-size: 16px;
                         font-weight: 700;
                         line-height: 18.75px;
-    
+
                     }
                 }
             }
-    
+
         }
 
-        
+
         .offer-chicago1 {
-            background-image: url('../../../assets/img/chicago2.png'),url('../../../assets/img/Intersect.svg');
+            background-image: url('../../../assets/img/chicago2.png'), url('../../../assets/img/Intersect.svg');
             background-repeat: no-repeat;
             background-size: auto;
         }
 
     }
+
     .offer-porto {
         background-image: url("../../../assets/img/porto1.jpg");
         background-repeat: no-repeat;
-        background-size: cover ;
+        background-size: cover;
         object-fit: none;
 
     }
+
     .offer-chicago1 {
         background-image: url("../../../assets/img/chicago2.png");
         background-repeat: no-repeat;
-        background-size: cover ;
+        background-size: cover;
         object-fit: none;
 
     }
+
     .offer-chicago2 {
         background-image: url("../../../assets/img/mire1.png");
         background-repeat: no-repeat;
-        background-size: cover ;
+        background-size: cover;
         object-fit: none;
 
     }
 
-    @media (min-width: 1024px) {
-        margin:0 125px;
+    @media (min-width: v.$breackpoint-destop)  {
+        margin: 0 125px;
+
         .card {
             display: flex;
             gap: 20px;
@@ -164,12 +167,13 @@
         .offer-chicago2 {
             width: 296px;
             height: 258px;
-            
-            .items{
-                img{
-                    margin-top:70px; 
+
+            .items {
+                img {
+                    margin-top: 70px;
                     width: 288px;
                 }
+
                 .txt-offer {
                     padding: 25px;
                     margin-left: 30%;
@@ -182,16 +186,17 @@
             height: 258px;
             background-image: url("../../../assets/img/porto1.jpg");
             background-repeat: no-repeat;
-            background-size: cover ;
+            background-size: cover;
             object-fit: none;
 
-            .items{
-                img{
-                    margin-top:10px; 
+            .items {
+                img {
+                    margin-top: 10px;
                     margin-left: 35%;
                     width: auto;
                     height: auto;
                 }
+
                 .txt-offer {
                     padding: 25px;
                     margin-left: 66%;
@@ -199,29 +204,32 @@
             }
 
         }
+
         .offer-chicago1 {
             background-image: url("../../../assets/img/chicago2.png");
             background-repeat: no-repeat;
-            background-size: cover ;
+            background-size: cover;
             object-fit: none;
 
         }
+
         .offer-chicago2 {
             background-image: url("../../../assets/img/mire1.png");
             background-repeat: no-repeat;
-            background-size: cover ;
+            background-size: cover;
             object-fit: none;
         }
-        .items{
 
-            img{
+        .items {
+
+            img {
                 position: absolute;
-                margin-top:10px; 
+                margin-top: 10px;
                 width: auto;
                 border-radius: 0 0 16px 16px;
                 z-index: 1;
             }
-            
+
         }
     }
 }
@@ -230,24 +238,29 @@
     padding: 14px;
 
     .card-destination {
+        display: flex;
+        flex-wrap: wrap;
         width: 386px;
         height: 722px;
         top: 1437px;
         left: 14px;
-        gap: 0px;
         border-radius: 16px;
         opacity: 0px;
         background: linear-gradient(180deg, #181823 39.26%, #537FE7 100%);
 
-        /*         img {
-            border-radius: 50%;
+
+        .img-card {
             width: 100%;
             height: 50%;
-            top: -403px;
-            left: -191px;
-            gap: 0px;
-            opacity: 0px;
-        } */
+            background-image: url("../../../assets/img/alexandr-podvalny-G5tfP-gBM84-unsplash 1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-position-x: center;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 0 0 45% 45%;
+            z-index: 3;
+        }
 
         .card-body {
             padding: 16px;
@@ -268,7 +281,7 @@
                 font-size: 34px;
                 font-weight: 400;
                 text-align: left;
-                color: v.$color5;
+                color: v.$color5-claro;
 
             }
 
@@ -283,8 +296,8 @@
         }
     }
 
-    @media (min-width: 1024px) {
-        margin:0 125px;
+    @media (min-width: v.$breackpoint-destop) {
+        margin: 0 125px;
 
         .card-destination {
             width: 100%;
@@ -295,34 +308,36 @@
             display: flex;
             flex-direction: row;
 
-            .img-card{
+            .img-card {
                 width: 60%;
-                background-image: url("../../../assets/img/alexandr-podvalny-G5tfP-gBM84-unsplash 1.jpg") ;
+                background-image: url("../../../assets/img/alexandr-podvalny-G5tfP-gBM84-unsplash 1.jpg");
                 background-size: cover;
                 background-position: center;
-                transition: transform .2s;
-                border-radius: 0 45% 45% 0 ;
+                border-radius: 0 45% 45% 0;
                 object-fit: none;
                 background-position-x: center;
+                
             }
-            .card-body{
+
+            .card-body {
+                
                 .titulo {
                     font-size: 34px;
                     font-weight: 700;
                     text-align: left;
                     color: #FFFFFF;
-    
+
                 }
-    
+
                 .subtitulo {
                     font-family: Roboto;
                     font-size: 34px;
                     font-weight: 400;
                     text-align: left;
                     color: v.$color5;
-    
+
                 }
-    
+
                 .txt-body {
                     font-family: Roboto;
                     font-size: 18px;
@@ -334,7 +349,7 @@
 
             }
 
-        
+
         }
 
     }

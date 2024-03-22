@@ -1,5 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-
+/*
+* creacion de variables globales para los estilos
+ */
 $font: "Roboto", sans-serif;
 $primary:#181823;
 $secondary:#537FE7;
@@ -10,12 +11,17 @@ $color7:#E9F8F9;
 $color-gray8:#E7E6F6;
 $color-gray9:#F1F0FF;
 
+/* Variables globales para los break point del responsive */
+$breackpoint-destop: 1024px;
+
+/* Importacion de la fuente alojada en el pryecto */
 @font-face {
     font-family: $font;
     src: url('./assets/fonts/Roboto-BlackItalic.ttf');
   }
 
-*{
+  /* Uso de la fuente para todo el proyecto */
+html{
     font-family: $font;
 }
 body{
