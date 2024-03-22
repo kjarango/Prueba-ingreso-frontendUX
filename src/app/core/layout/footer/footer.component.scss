@@ -37,15 +37,12 @@
     }
 
     .footer-follow {
-        order: 0 !important;
-        /* Arriba | Derecha | Abajo | Izquierda */
+        order: 0;
         margin: 1rem 3rem;
 
-        svg {
-            width: auto;
+        img {
+            width: 50px;
             color: v.$primary;
-            border: 2px solid v.$primary;
-            border-radius: 50px 50px;
             padding: 2px;
             justify-content: space-around;
             margin-right: 8px;
